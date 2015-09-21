@@ -1,0 +1,19 @@
+{
+    "name": "goodspb/laravel-easemob",
+    "description": "easemob client for laravel",
+    "authors": [
+        {
+            "name": "goodspb",
+            "email": "goodspbluo@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Goodspb\\LaravelEasemob\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
