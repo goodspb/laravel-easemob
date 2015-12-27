@@ -1,18 +1,12 @@
 {
-    "name": "aobozhang/laravel-easemob",
-    "description": "easemob client for laravel",
+    "name": "aobozhang/easemob-facades",
+    "description": "used Easemob as laravel facades",
     "authors": [
         {
             "name": "Aobo",
             "email": "aobozhang@gmail.com"
         }
     ],
-    "repositories": [
-            {
-                "type": "vcs",
-                "url": "https://github.com/aobozhang/laravel-easemob"
-            }
-        ],
     "require": {
         "php": ">=5.4.0"
     },
