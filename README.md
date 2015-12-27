@@ -1,3 +1,5 @@
+# In Dev Test  
+
 ## Easemob Client Provider For Laravel5
 
 Easemob Client Provider For Laravel5
@@ -124,7 +126,7 @@ Easemob::reset_password($username,$newpassword);
  * 上传聊天文件 （图片 / 视频 / 语音）
  * @param $filepath 文件所在目录，建议先上传到服务器，然后再上传去环信服务器
  * @param bool $restrict_access  是否设置权限（仅指定用户才能查看）
- * @return bool 
+ * @return bool
  */
 
 $result = upload_chatfiles($filepath , $restrict_access = false)；

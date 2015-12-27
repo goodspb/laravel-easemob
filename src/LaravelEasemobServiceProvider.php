@@ -1,4 +1,4 @@
-<?php namespace Goodspb\LaravelEasemob;
+<?php namespace Aobo\Easemob;
 
 use Illuminate\Support\ServiceProvider;
 

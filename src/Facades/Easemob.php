@@ -1,4 +1,4 @@
-<?php namespace Goodspb\LaravelEasemob\Facades;
+<?php namespace Aobo\Easemob\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

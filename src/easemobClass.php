@@ -1,5 +1,5 @@
 <?php
-namespace Goodspb\LaravelEasemob;
+namespace Aobo\Easemob;
 
 class EasemobClass {
 
