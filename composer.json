@@ -1,10 +1,10 @@
 {
-    "name": "goodspb/laravel-easemob",
-    "description": "easemob client for laravel",
+    "name": "aobozhang/easemob-facades",
+    "description": "used Easemob as laravel facades",
     "authors": [
         {
-            "name": "goodspb",
-            "email": "goodspbluo@gmail.com"
+            "name": "Aobo",
+            "email": "aobozhang@gmail.com"
         }
     ],
     "require": {
@@ -12,8 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Goodspb\\LaravelEasemob\\": "src/"
+            "Aobo\\Easemob\\": "src/"
         }
-    },
-    "minimum-stability": "stable"
+    }
 }
