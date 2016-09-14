@@ -163,7 +163,7 @@ class easemob
     }
 
 	//用户注册
-	function user_register($username, $password, $nickname = "") {
+	function user_register($username, $password, $nickname = "", $bool = false) {
 
 		$url = "users";
 		$http_method = "POST";
@@ -175,7 +175,14 @@ class easemob
 		if (!empty($nickname)) {
 			$request_body_array['nickname'] = $nickname;
 		}
-		$request_body = json_encode($request_body_array);
+		
+        if($bool){
+            $token = $this->get_token();
+            $header = array('Authorization: Bearer '.$token);
+            $result = $this->api_request($url,$request_body , $http_method, $header);            
+        }else{
+            $result = $this->api_request($url,$request_body , $http_method);            
+        }
 
 		$result = $this->api_request($url,$request_body , $http_method);
         return $this->result_handler($result);
