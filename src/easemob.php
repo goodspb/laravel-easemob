@@ -164,7 +164,6 @@ class easemob
 
 	//用户注册
 	function user_register($username, $password, $nickname = "", $bool = false) {
-
 		$url = "users";
 		$http_method = "POST";
 
