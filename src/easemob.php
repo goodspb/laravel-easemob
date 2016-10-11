@@ -175,16 +175,16 @@ class easemob
 			$request_body_array['nickname'] = $nickname;
 		}
 		
-        if($bool){
-            $token = $this->get_token();
-            $header = array('Authorization: Bearer '.$token);
-            $result = $this->api_request($url,$request_body , $http_method, $header);            
-        }else{
-            $result = $this->api_request($url,$request_body , $http_method);            
-        }
-
-		$result = $this->api_request($url,$request_body , $http_method);
-        return $this->result_handler($result);
+	        $header = array('Content-Type: application/json');
+	        if($bool){
+	            $token = $this->get_token();
+	            $header = array('Authorization: Bearer '.$token);
+	        }
+	        $request_body = json_encode($request_body_array);
+	
+	        $result = $this->api_request($url,$request_body , $http_method, $header);
+	        
+	        return $this->result_handler($result);
 	}
 
     //删除环信用户
